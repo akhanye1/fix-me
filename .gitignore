@@ -1,4 +1,8 @@
 *.class
 *.swp
 *.swo
-*.
+*.iml
+*.jar
+fixmebroker/target/*
+fixmemarket/target/*
+fixmerouter/target/*
