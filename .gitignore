@@ -3,6 +3,6 @@
 *.swo
 *.iml
 *.jar
-fixmebroker/target/*
-fixmemarket/target/*
-fixmerouter/target/*
+fixmebroker/target/
+fixmemarket/target/
+fixmerouter/target/
