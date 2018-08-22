@@ -4,7 +4,7 @@ public class FixModelProtocol
 {
 	private static String _message;
 
-	//well according to the FIX protocol the each tag=value pair should be seperated by a delimeter
+	//well according to the FIX protocol each tag=value pair should be seperated by a delimeter
 	public static String FixMessage(String delimiter)
 	{
 		String[] sep_mssgs = delimeter.split("\\|");
