@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fixmebroker" />
+        <module name="fixmecore" />
         <module name="fixmemarket" />
         <module name="fixmerouter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fixmebroker" target="1.7" />
+      <module name="fixmecore" target="1.7" />
       <module name="fixmemarket" target="1.7" />
       <module name="fixmerouter" target="1.7" />
       <module name="test" target="1.5" />

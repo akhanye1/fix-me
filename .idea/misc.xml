@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/fixmerouter/pom.xml" />
         <option value="$PROJECT_DIR$/fixmebroker/pom.xml" />
         <option value="$PROJECT_DIR$/fixmemarket/pom.xml" />
+        <option value="$PROJECT_DIR$/fixmecore/pom.xml" />
       </list>
     </option>
   </component>
