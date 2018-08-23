@@ -6,18 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fixmebroker" />
-        <module name="fixmecore" />
-        <module name="fixmemarket" />
-        <module name="fixmerouter" />
+        <module name="fixme-broker" />
+        <module name="fixme-core" />
+        <module name="fixme-market" />
+        <module name="fixme-router" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="fixmebroker" target="1.7" />
-      <module name="fixmecore" target="1.7" />
-      <module name="fixmemarket" target="1.7" />
-      <module name="fixmerouter" target="1.7" />
-      <module name="test" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

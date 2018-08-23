@@ -1,3 +1,5 @@
+import FixModolProtocol.*;
+
 
 public class Decipher {
 
