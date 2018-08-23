@@ -1,5 +1,3 @@
-package FixModolProtocol;
-
 public class FixModelProtocol
 {
     private static String _message;
