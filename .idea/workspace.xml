@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1e5ffac3-761e-41a4-819c-d2a8856c5687" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
@@ -19,6 +20,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/Decipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/Decipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/FixModolProtocol/FixModelProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/FixModolProtocol/FixModelProtocol.java" afterDir="false" />
+=======
+    <list default="true" id="a1da76a5-760d-4957-ac1b-2450c3754241" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/Protocol.java" afterDir="false" />
+>>>>>>> 2beb4a3c5c6bb570fa469461d8debf0caf96af95
     </list>
     <ignored path="$PROJECT_DIR$/fixmebroker/target/" />
     <ignored path="$PROJECT_DIR$/fixmecore/target/" />
@@ -33,6 +38,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file leaf-file-name="FixModelProtocol.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/FixModolProtocol/FixModelProtocol.java">
@@ -71,6 +77,126 @@
         </entry>
       </file>
     </leaf>
+=======
+    <splitter split-orientation="horizontal" split-proportion="0.6763006">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="MainMarket.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fixmemarket/src/main/java/MainMarket.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="164">
+                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fixmemarket/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MainBroker.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fixmebroker/src/main/java/MainBroker.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="13" selection-start-column="13" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fixmecore/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fixmecore/src/main/resources/META-INF/MANIFEST.MF">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FixModelProtocol.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/FixModolProtocol/FixModelProtocol.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Decipher.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/Decipher.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Protocol.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/Protocol.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MainRouter.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fixmerouter/src/main/java/MainRouter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="FixModelProtocol.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/FixModolProtocol/FixModelProtocol.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="208" lean-forward="true" selection-start-line="9" selection-start-column="196" selection-end-line="9" selection-end-column="208" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+>>>>>>> 2beb4a3c5c6bb570fa469461d8debf0caf96af95
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -243,13 +369,29 @@
       <created>1535019604057</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1535019604057</updated>
       <workItem from="1535019605434" duration="562000" />
+=======
+      <updated>1534231515972</updated>
+      <workItem from="1534231524851" duration="5901000" />
+      <workItem from="1534239250539" duration="576000" />
+      <workItem from="1534315930193" duration="5095000" />
+      <workItem from="1534399621451" duration="3518000" />
+      <workItem from="1534745581695" duration="646000" />
+      <workItem from="1534832451848" duration="1726000" />
+      <workItem from="1534920095225" duration="1385000" />
+      <workItem from="1535004672593" duration="4427000" />
+>>>>>>> 2beb4a3c5c6bb570fa469461d8debf0caf96af95
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="562000" />
+=======
+    <option name="totallyTimeSpent" value="23274000" />
+>>>>>>> 2beb4a3c5c6bb570fa469461d8debf0caf96af95
   </component>
   <component name="ToolWindowManager">
     <frame x="521" y="23" width="1298" height="977" extended-state="0" />
@@ -315,8 +457,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/GenerateFix.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="45">
           <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+=======
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmemarket/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmecore/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/resources/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmerouter/src/main/java/MainRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmemarket/src/main/java/MainMarket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/FixModolProtocol/FixModelProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/Decipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/Protocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 2beb4a3c5c6bb570fa469461d8debf0caf96af95
         </state>
       </provider>
     </entry>
