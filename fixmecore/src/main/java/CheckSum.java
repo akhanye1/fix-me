@@ -15,3 +15,4 @@ public class CheckSum
         String checksum = marketId + separator + messType + separator + Encrypt.encrypt(instru + separator + quant + separator + price);
         return (checksum);
     }
+};
