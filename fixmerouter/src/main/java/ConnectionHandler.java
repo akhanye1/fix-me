@@ -15,6 +15,7 @@ class ConnectionHandler implements
         try {
             SocketAddress clientAddr = client.getRemoteAddress();
             System.out.format("Accepted a  connection from  %s%n", clientAddr);
+			System.out.println("Port :: " + attach.serverAddr.getPort());
             attach.server.accept(attach, this);
             ReadWriteHandler rwHandler = new ReadWriteHandler();
             Attachment newAttach = new Attachment();

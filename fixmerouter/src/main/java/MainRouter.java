@@ -19,7 +19,7 @@ public class MainRouter {
 			server.bind(socketAddress);
 			Attachment attach = new Attachment();
 			attach.server = server;
-			attach.clientAddr = socketAddress;
+			attach.serverAddr = socketAddress;
 			server.accept(attach, new ConnectionHandler());
 			System.out.println("Server Listening at port :: " + port);
 		}
@@ -37,55 +37,8 @@ public class MainRouter {
 		catch (InterruptedException err) {
 			System.out.println("Error joining threads :: " + err.getMessage());
 		}
-        /*AsynchronousServerSocketChannel server = AsynchronousServerSocketChannel
-                .open();//w w w  .  j  a  v  a2s .com
-        String host = "localhost";
-        int port = 8989;
-        InetSocketAddress sAddr = new InetSocketAddress(host, port);
-        server.bind(sAddr);
-        System.out.format("Server is listening at %s%n", sAddr);
-        Attachment attach = new Attachment();
-        attach.server = server;
-        server.accept(attach, new ConnectionHandler());
-        Thread.currentThread().join();*/
-    }
+	}
 }
-
-/*class Attachment {
-    AsynchronousServerSocketChannel server;
-    AsynchronousSocketChannel client;
-    ByteBuffer buffer;
-    SocketAddress clientAddr;
-    boolean isRead;
-}*/
-
-/*class ConnectionHandler implements
-        CompletionHandler<AsynchronousSocketChannel, Attachment> {
-    @Override
-    public void completed(AsynchronousSocketChannel client, Attachment attach) {
-        try {
-            SocketAddress clientAddr = client.getRemoteAddress();
-            System.out.format("Accepted a  connection from  %s%n", clientAddr);
-            attach.server.accept(attach, this);
-            ReadWriteHandler rwHandler = new ReadWriteHandler();
-            Attachment newAttach = new Attachment();
-            newAttach.server = attach.server;
-            newAttach.client = client;
-            newAttach.buffer = ByteBuffer.allocate(2048);
-            newAttach.isRead = false;
-            newAttach.clientAddr = clientAddr;
-            client.read(newAttach.buffer, newAttach, rwHandler);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
-    public void failed(Throwable e, Attachment attach) {
-        System.out.println("Failed to accept a  connection.");
-        e.printStackTrace();
-    }
-}*/
 
 class ReadWriteHandler implements CompletionHandler<Integer, Attachment> {
     @Override
