@@ -1,3 +1,6 @@
+
+package com;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
@@ -8,8 +11,33 @@ import java.nio.channels.CompletionHandler;
 import java.nio.charset.Charset;
 
 public class MainRouter {
-    public static void main(String[] args) throws Exception {
-        AsynchronousServerSocketChannel server = AsynchronousServerSocketChannel
+
+	public static void RegisterServer(int port) {
+		try {
+			AsynchronousServerSocketChannel server = AsynchronousServerSocketChannel.open();
+			InetSocketAddress socketAddress = new InetSocketAddress("localhost", port);
+			server.bind(socketAddress);
+			Attachment attach = new Attachment();
+			attach.server = server;
+			attach.clientAddr = socketAddress;
+			server.accept(attach, new ConnectionHandler());
+			System.out.println("Server Listening at port :: " + port);
+		}
+		catch (Exception err) {
+			System.out.println("Error listening to port " + port + " :: " + err.getMessage());
+		}
+	}
+	
+    public static void main(String[] args) {
+		RegisterServer(5000);
+		RegisterServer(5001);
+		try {
+			Thread.currentThread().join();
+		}
+		catch (InterruptedException err) {
+			System.out.println("Error joining threads :: " + err.getMessage());
+		}
+        /*AsynchronousServerSocketChannel server = AsynchronousServerSocketChannel
                 .open();//w w w  .  j  a  v  a2s .com
         String host = "localhost";
         int port = 8989;
@@ -19,18 +47,19 @@ public class MainRouter {
         Attachment attach = new Attachment();
         attach.server = server;
         server.accept(attach, new ConnectionHandler());
-        Thread.currentThread().join();
+        Thread.currentThread().join();*/
     }
 }
-class Attachment {
+
+/*class Attachment {
     AsynchronousServerSocketChannel server;
     AsynchronousSocketChannel client;
     ByteBuffer buffer;
     SocketAddress clientAddr;
     boolean isRead;
-}
+}*/
 
-class ConnectionHandler implements
+/*class ConnectionHandler implements
         CompletionHandler<AsynchronousSocketChannel, Attachment> {
     @Override
     public void completed(AsynchronousSocketChannel client, Attachment attach) {
@@ -56,7 +85,7 @@ class ConnectionHandler implements
         System.out.println("Failed to accept a  connection.");
         e.printStackTrace();
     }
-}
+}*/
 
 class ReadWriteHandler implements CompletionHandler<Integer, Attachment> {
     @Override
