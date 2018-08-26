@@ -1,3 +1,5 @@
+package fixmecore;
+
 public class CheckSum {
     private static String separator = "|";
 

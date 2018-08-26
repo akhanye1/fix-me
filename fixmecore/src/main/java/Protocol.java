@@ -1,3 +1,6 @@
+
+package fixmecore;
+
 import lombok.Getter;
 import lombok.Setter;
 

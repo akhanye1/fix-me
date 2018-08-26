@@ -1,4 +1,6 @@
 
+package fixmecore;
+
 public class Decipher {
 
     public static void readToObject(String line){

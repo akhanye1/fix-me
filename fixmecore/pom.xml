@@ -10,8 +10,8 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>fixme-core</groupId>
-    <artifactId>fixme-core</artifactId>
+    <groupId>fixmecore</groupId>
+    <artifactId>fixmecore</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <build>

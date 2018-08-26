@@ -4,6 +4,10 @@
 *.iml
 *.jar
 fixmebroker/target
+fixmebroker/target/*
 fixmemarket/target
+fixmemarket/target/*
 fixmerouter/target
+fixmerouter/target/*
 fixmecore/target
+fixmorecore/target/*

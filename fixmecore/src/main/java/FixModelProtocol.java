@@ -1,3 +1,6 @@
+
+package fixmecore;
+
 public class FixModelProtocol
 {
     private static String _message;

@@ -1,3 +1,6 @@
+
+package fixmecore;
+
 public class GenerateFix {
 
     public String GenerateFixMsgFromModel(Protocol model){
