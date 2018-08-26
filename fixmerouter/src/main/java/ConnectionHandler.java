@@ -1,4 +1,4 @@
-package com;
+package fixmerouter;
 
 import java.nio.channels.AsynchronousSocketChannel;
 import java.net.SocketAddress;
@@ -6,6 +6,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.CompletionHandler;
 import java.nio.charset.Charset;
 import java.io.IOException;
+import fixmecore.Attachment;
 
 class ConnectionHandler implements
         CompletionHandler<AsynchronousSocketChannel, Attachment> {

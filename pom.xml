@@ -9,9 +9,9 @@
   <url>http://maven.apache.org</url>
 
   <modules>
+	<module>fixmecore</module>
     <module>fixmebroker</module>
     <module>fixmemarket</module>
-    <module>fixmecore</module>
     <module>fixmerouter</module>
 	<!--    <module>fixmecore</module> -->
   </modules>
