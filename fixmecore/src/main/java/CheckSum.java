@@ -3,7 +3,7 @@ package fixmecore;
 public class CheckSum {
     private static String separator = "|";
 
-    public static String CheckSum(String message) {
+    public static String checkSum(String message) {
         String[] mssg_parts = message.split("\\|");
 
         String SENDER_ID = mssg_parts[0];
