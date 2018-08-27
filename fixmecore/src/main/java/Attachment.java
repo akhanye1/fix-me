@@ -14,4 +14,5 @@ public class Attachment {
 	public InetSocketAddress				serverAddr;
 	public boolean							isBroker;
 	public boolean							isRead;	
+	public boolean							mustRead;
 }

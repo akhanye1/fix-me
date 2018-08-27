@@ -17,6 +17,16 @@ class ConnectionHandler implements
             System.out.format("Accepted a  connection from  %s%n", clientAddr);
 			System.out.println("Port :: " + attach.serverAddr.getPort());
             attach.server.accept(attach, this);
+			if (attach.serverAddr.getPort() == 5000) {
+				attach.isBroker = true;
+			}
+			else if (attach.serverAddr.getPort() == 5001) {
+				attach.isBroker = false;
+			}
+			else {
+				System.out.println("Connection error");
+				System.exit(0);
+			}
             ReadWriteHandler rwHandler = new ReadWriteHandler();
             Attachment newAttach = new Attachment();
             newAttach.server = attach.server;

@@ -40,7 +40,7 @@ public class MainRouter {
 	}
 }
 
-class ReadWriteHandler implements CompletionHandler<Integer, Attachment> {
+/*class ReadWriteHandler implements CompletionHandler<Integer, Attachment> {
     @Override
     public void completed(Integer result, Attachment attach) {
         if (result == -1) {
@@ -87,4 +87,4 @@ class ReadWriteHandler implements CompletionHandler<Integer, Attachment> {
     public void failed(Throwable e, Attachment attach) {
         e.printStackTrace();
     }
-}
+}*/
