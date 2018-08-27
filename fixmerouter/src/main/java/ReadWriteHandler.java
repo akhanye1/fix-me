@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 
 public class ReadWriteHandler implements CompletionHandler<Integer, Attachment> {
+
 	@Override
 	public void completed(Integer result, Attachment attach) {
 		if (result == -1) {
