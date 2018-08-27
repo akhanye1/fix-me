@@ -3,7 +3,7 @@ package fixmecore;
 public class CheckSum {
     private static String separator = "|";
 
-    public static String CheckSum(String message) {
+    public static String checkSum(String message) {
         String[] mssg_parts = message.split("\\|");
 
         String SENDER_ID = mssg_parts[0];
@@ -13,7 +13,7 @@ public class CheckSum {
         String ORDER_PRICE = mssg_parts[4];
         String ORDER_STATUS = mssg_parts[5];
 
-        String checksum = SENDER_ID + separator + MARKET_ID + separator + ORDER_TYPE + separator + Encrypt.encrypt(ORDER_QUANTITY + separator + ORDER_PRICE + separator + ORDER_STATUS);
+        String checksum = SENDER_ID + separator + MARKET_ID + separator + ORDER_TYPE + separator + fixmecore.Encrypt.encrypt(ORDER_QUANTITY + separator + ORDER_PRICE + separator + ORDER_STATUS);
         return (checksum);
     }
 }
