@@ -2,6 +2,8 @@ package fixmerouter;
 
 import java.nio.channels.CompletionHandler;
 import fixmecore.Attachment;
+import java.io.IOException;
+import java.nio.charset.Charset;
 
 public class ReadWriteHandler implements CompletionHandler<Integer, Attachment> {
 	@Override
