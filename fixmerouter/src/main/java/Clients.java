@@ -8,7 +8,7 @@ public class Clients {
 	private static List<Attachment>	attachedClients = new ArrayList<Attachment>();
 
 	public static void addClient(Attachment attach) {
-		System.out.println("New client added");
+		System.out.println("New client added :: " + attach.id);
 		attachedClients.add(attach);
 	}
 

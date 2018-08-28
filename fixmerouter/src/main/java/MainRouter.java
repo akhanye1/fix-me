@@ -12,7 +12,7 @@ import fixmecore.Attachment;
 
 public class MainRouter {
 
-	Clients clients = new Clients();
+	Clients _clients = new Clients();
 
 	public static void RegisterServer(int port) {
 		try {

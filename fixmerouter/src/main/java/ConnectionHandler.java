@@ -44,7 +44,7 @@ class ConnectionHandler implements
             newAttach.isRead = false;
             newAttach.clientAddr = clientAddr;
 			Clients.addClient(newAttach);
-            client.read(newAttach.buffer, attach, rwHandler);
+            client.read(newAttach.buffer, newAttach, rwHandler);
         } catch (IOException e) {
             e.printStackTrace();
         }
