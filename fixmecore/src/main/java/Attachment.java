@@ -7,6 +7,7 @@ import java.net.SocketAddress;
 import java.net.InetSocketAddress;
 
 public class Attachment {
+	public String							id;
 	public AsynchronousServerSocketChannel	server;
 	public AsynchronousSocketChannel		client;
 	public ByteBuffer						buffer;

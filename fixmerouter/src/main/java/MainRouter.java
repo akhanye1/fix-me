@@ -12,6 +12,8 @@ import fixmecore.Attachment;
 
 public class MainRouter {
 
+	Clients clients = new Clients();
+
 	public static void RegisterServer(int port) {
 		try {
 			AsynchronousServerSocketChannel server = AsynchronousServerSocketChannel.open();
@@ -29,7 +31,7 @@ public class MainRouter {
 	}
 	
     public static void main(String[] args) {
-		RegisterServer(5000);
+		RegisterServer(5002);
 		RegisterServer(5001);
 		try {
 			Thread.currentThread().join();

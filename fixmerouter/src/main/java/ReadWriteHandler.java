@@ -27,6 +27,12 @@ public class ReadWriteHandler implements CompletionHandler<Integer, Attachment> 
 			attach.buffer.get(bytes, 0, limits);
 			Charset cs = Charset.forName("UTF-8");
 			String msg = new String(bytes, cs);
+			if (attach.serverAddr.getPort() == 5000) {
+				System.out.println("5000 made connection");
+			}
+			else if (attach.serverAddr.getPort() == 5001) {
+				System.out.println("5001 made connection");
+			}
 			/*System.out.format("Client at  %s  says: %s%n", attach.clientAddr,
 					msg);
 			attach.isRead = false; // It is a write
