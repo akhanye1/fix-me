@@ -10,6 +10,8 @@
         <module name="fixme-core" />
         <module name="fixme-market" />
         <module name="fixme-router" />
+        <module name="fixmecore" />
+        <module name="fixmerouter" />
       </profile>
     </annotationProcessing>
   </component>
