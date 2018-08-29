@@ -9,6 +9,7 @@ import java.nio.channels.AsynchronousSocketChannel;
 import java.nio.channels.CompletionHandler;
 import java.nio.charset.Charset;
 import fixmecore.Attachment;
+import fixmecore.MessageResponse;
 
 public class MainRouter {
 
@@ -21,6 +22,7 @@ public class MainRouter {
 			server.bind(socketAddress);
 			Attachment attach = new Attachment();
 			attach.server = server;
+			attach.response = new Reply();
 			attach.serverAddr = socketAddress;
 			server.accept(attach, new ConnectionHandler());
 			System.out.println("Server Listening at port :: " + port);
@@ -31,7 +33,7 @@ public class MainRouter {
 	}
 	
     public static void main(String[] args) {
-		RegisterServer(5000);
+		RegisterServer(5002);
 		RegisterServer(5001);
 		try {
 			Thread.currentThread().join();
