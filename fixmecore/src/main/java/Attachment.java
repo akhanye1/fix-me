@@ -13,6 +13,7 @@ public class Attachment {
 	public ByteBuffer						buffer;
 	public SocketAddress					clientAddr;
 	public InetSocketAddress				serverAddr;
+	public int								mainPort;
 	public boolean							isBroker;
 	public boolean							isRead;	
 	public boolean							mustRead;

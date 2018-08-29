@@ -10,6 +10,7 @@ public class MainBroker {
 	public MainBroker() {
 		connector = new Connector(5000);
 		connector.connect();
+		connector.sendMessage("Hello");
 	}
 
 	public static void main(String[] args) {

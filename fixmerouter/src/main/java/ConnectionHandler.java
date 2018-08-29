@@ -7,6 +7,7 @@ import java.nio.channels.CompletionHandler;
 import java.nio.charset.Charset;
 import java.io.IOException;
 import fixmecore.Attachment;
+import fixmecore.ReadWriteHandler;
 
 class ConnectionHandler implements
         CompletionHandler<AsynchronousSocketChannel, Attachment> {
@@ -22,11 +23,13 @@ class ConnectionHandler implements
             attach.server.accept(attach, this);
 			if (attach.serverAddr.getPort() == 5000) {
 				attach.id = String.valueOf(brokerId++);
+				attach.mainPort = 5000;
 				attach.isBroker = true;
 			}
 			else if (attach.serverAddr.getPort() == 5001) {
 				attach.id = String.valueOf(marketId++);
 				attach.isBroker = false;
+				attach.mainPort = 5001;
 			}
 			else {
 				System.out.println("Connection error");
@@ -41,7 +44,8 @@ class ConnectionHandler implements
 			newAttach.id = attach.id;
             newAttach.client = client;
             newAttach.buffer = ByteBuffer.allocate(2048);
-            newAttach.isRead = false;
+            newAttach.isRead = true;
+			newAttach.mainPort = attach.mainPort;
             newAttach.clientAddr = clientAddr;
 			Clients.addClient(newAttach);
             client.read(newAttach.buffer, newAttach, rwHandler);
