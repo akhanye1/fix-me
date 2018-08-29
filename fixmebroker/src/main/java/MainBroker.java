@@ -13,6 +13,9 @@ public class MainBroker {
 		connector.sendMessage("Hello");
 	}
 
+	public void processMessage(String messageString) {
+	}
+
 	public static void main(String[] args) {
 		new MainBroker();
 	}
