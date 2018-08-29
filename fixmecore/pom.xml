@@ -74,6 +74,15 @@ i										<include name="target/*.jar" />
 									</fileset>
 								</copy>
 							</target>
+							<target>
+								<echo>ANT TASK - copying files....</echo>
+								<copy todir="${basedir}/../fixmebroker/repo/fixmecore/fixmecore/1.0-SNAPSHOT" overwrite="true" flatten="true">
+									<fileset dir="${basedir}/target/" includes="*.jar" >
+i										<include name="target/*.jar" />
+									</fileset>
+								</copy>
+							</target>
+
 						</configuration>
 						<goals>
 							<goal>run</goal>

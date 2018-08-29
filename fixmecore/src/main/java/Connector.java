@@ -1,8 +1,6 @@
 package fixmecore;
 
 import java.nio.channels.AsynchronousSocketChannel;
-
-import java.net.Future;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Future;
 
@@ -12,8 +10,6 @@ public class Connector {
 	
 	private void attachClientObject(AsynchronousSocketChannel channel) {
 		this.attach = new Attachment();
-		this.attach
-
 	}
 
 	public Connector(int port) {
@@ -23,7 +19,7 @@ public class Connector {
 	public void sendMessage(String message) {
 	}
 
-	public boolean Connect() {
+	public boolean connect() {
 		try {
 			AsynchronousSocketChannel channel = AsynchronousSocketChannel.open();
 			InetSocketAddress client = new InetSocketAddress("localhost", this.port);
@@ -35,5 +31,6 @@ public class Connector {
 		catch (Exception err) {
 			System.out.println("Error connecting to port ::" + this.port);
 		}
+		return (false);
 	}
 }

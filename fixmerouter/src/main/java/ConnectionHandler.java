@@ -20,7 +20,7 @@ class ConnectionHandler implements
             System.out.format("Accepted a connection from  %s%n", clientAddr);
 			System.out.println("Port :: " + attach.serverAddr.getPort());
             attach.server.accept(attach, this);
-			if (attach.serverAddr.getPort() == 5002) {
+			if (attach.serverAddr.getPort() == 5000) {
 				attach.id = String.valueOf(brokerId++);
 				attach.isBroker = true;
 			}
