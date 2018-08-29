@@ -1,12 +1,10 @@
 package fixmebroker;
 
-import fixmecore.Connector;
-import fixmecore.Attachment;
-import fixmecore.FIXModel;
-
+import fixmecore.*;
 
 public class MainBroker {
 
+	public static fixmecore.FIXController controller;
 	private Connector connector;
 
 	public MainBroker() {
@@ -21,6 +19,10 @@ public class MainBroker {
 		}else {
 			new MainBroker();
 			FIXModel model = new FIXModel("", args[3], args[4], args[2], "", "", args[1]);
+			String FIXString = controller.GenerateFixMsgFromModel(model);
+			FIXString = CheckSum.checkSum(FIXString);
+			connector.sendMessage(FIXString);//WHY????? lol
 		}
+
 	}
 }

@@ -1,7 +1,7 @@
 package fixmecore;
 
 public class CheckSum {
-    private static String separator = "|";
+      private static String separator = "|";
 
     public static String checkSum(String message) {
         String[] mssg_parts = message.split("\\|");

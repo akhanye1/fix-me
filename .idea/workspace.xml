@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3f0da2c-6749-4e92-ad3b-81c1aa5c80df" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixmebroker/src/main/java/MainBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmebroker/src/main/java/MainBroker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/FIXController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/FIXController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/FIXModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/FIXModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/Attachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Attachment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/CheckSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/CheckSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Connector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/Encrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Encrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/FIXController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/FIXController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/FIXModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/FIXModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/ReadWriteHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/ReadWriteHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/fixmemarket/target/" />
     <ignored path="$PROJECT_DIR$/fixmerouter/target/" />
@@ -21,55 +27,25 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="FIXModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/FIXModel.java">
+        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/FIXModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+            <state relative-caret-position="105">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="FIXController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/FIXController.java">
+        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/FIXController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Connector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/Connector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainBroker.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fixmebroker/src/main/java/MainBroker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckSum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/CheckSum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Attachment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/Attachment.java">
+        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Connector.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -77,8 +53,35 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MainBroker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fixmebroker/src/main/java/MainBroker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckSum.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/CheckSum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Attachment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Attachment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Encrypt.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/Encrypt.java">
+        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Encrypt.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -87,7 +90,7 @@
         </entry>
       </file>
       <file leaf-file-name="ReadWriteHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/ReadWriteHandler.java">
+        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/ReadWriteHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -112,9 +115,10 @@
       <list>
         <option value="$PROJECT_DIR$/fixmecore/src/main/java/Decipher.java" />
         <option value="$PROJECT_DIR$/fixmecore/src/main/java/GenerateFix.java" />
-        <option value="$PROJECT_DIR$/fixmebroker/src/main/java/MainBroker.java" />
         <option value="$PROJECT_DIR$/fixmecore/src/main/java/FIXModel.java" />
         <option value="$PROJECT_DIR$/fixmecore/src/main/java/FIXController.java" />
+        <option value="$PROJECT_DIR$/fixmebroker/src/main/java/MainBroker.java" />
+        <option value="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/CheckSum.java" />
       </list>
     </option>
   </component>
@@ -199,6 +203,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fix-me__" type="462c0819:PsiDirectoryNode" />
+              <item name="fixmecore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fixmecore" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -279,12 +292,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535542492024</updated>
-      <workItem from="1535542493322" duration="2400000" />
+      <workItem from="1535542493322" duration="3677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2400000" />
+    <option name="totallyTimeSpent" value="3677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -334,31 +347,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/ReadWriteHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/Decipher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="11" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/CheckSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/Attachment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -369,41 +361,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/Encrypt.java">
+    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Connector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Encrypt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/FIXModel.java">
+    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/FIXModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/FIXController.java">
+    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/ReadWriteHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/Connector.java">
+    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Attachment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/FIXController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixmebroker/src/main/java/MainBroker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/CheckSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
         </state>
       </provider>
     </entry>
