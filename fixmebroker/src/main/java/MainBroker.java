@@ -1,10 +1,10 @@
 package fixmebroker;
 
-import fixmecore.Connector;
-import fixmecore.Attachment;
+import fixmecore.*;
 
 public class MainBroker {
 
+	public static fixmecore.FIXController controller;
 	private Connector connector;
 
 	public MainBroker() {
@@ -17,6 +17,15 @@ public class MainBroker {
 	}
 
 	public static void main(String[] args) {
-		new MainBroker();
+		if (args.length != 4) {
+			System.out.println("Usage: [java -jar app.jar REQUEST_TYPE MARKET_ID INSTRUMENT QUANTITY]");
+		}else {
+			new MainBroker();
+			FIXModel model = new FIXModel("", args[3], args[4], args[2], "", "", args[1]);
+			String FIXString = controller.GenerateFixMsgFromModel(model);
+			FIXString = CheckSum.checkSum(FIXString);
+			connector.sendMessage(FIXString);//WHY????? lol
+		}
+
 	}
 }
