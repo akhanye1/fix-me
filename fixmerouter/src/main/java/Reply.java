@@ -13,8 +13,8 @@ public class Reply implements MessageResponse {
 		this.attach = attach;
 	}
 
-	public void processMessage(String message, ReadWriteHandler readWriteHandler) {
+	public void processMessage(String message, ReadWriteHandler readWriteHandler, Attachment staticAttach) {
 		System.out.println("Message recieved  :: <" + message + ">");
-		Connector.sendStaticMessage(message.toLowerCase(), this.attach, readWriteHandler);
+		Connector.sendStaticMessage(message.toLowerCase(), staticAttach, readWriteHandler);
 	}
 }

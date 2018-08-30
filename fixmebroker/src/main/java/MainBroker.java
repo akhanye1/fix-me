@@ -19,6 +19,12 @@ public class MainBroker {
 		String FIXString = controller.GenerateFixMsgFromModel(model);
 		FIXString = CheckSum.checkSum(FIXString);
 		connector.sendMessage(FIXString);
+		try {
+			Thread.currentThread().join();
+		}
+		catch (InterruptedException err) {
+			System.out.println("Error :: " + err.getMessage());
+		}
 	}
 	
 	public static void main(String[] args) {
