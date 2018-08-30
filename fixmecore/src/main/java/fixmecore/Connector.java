@@ -10,21 +10,28 @@ public class Connector {
 	private int port;
 	private Attachment attach;
 	private ReadWriteHandler readwriteHandler;
-	private Class callingClass;
+	private MessageResponse callingClass;
 	
 	private void attachClientObject(AsynchronousSocketChannel channel) {
 		this.attach = new Attachment();
 		this.attach.client = channel;
 		this.attach.buffer = ByteBuffer.allocate(2048);
 		this.attach.isRead = false;
+		this.attach.response = this.callingClass;
 		this.attach.mainPort = this.port;
 	}
 
 	public Connector(int port) {
+		this.callingClass = null;
 		this.port = port;
 	}
 	
 	public Connector(int port, Class callingClass) {
+		this.port = port;
+		this.callingClass = callingClass;
+	}
+
+	public Connector(int port, MessageResponse callingClass) {
 		this.port = port;
 		this.callingClass = callingClass;
 	}
