@@ -25,11 +25,6 @@ public class Connector {
 		this.callingClass = null;
 		this.port = port;
 	}
-	
-	public Connector(int port, Class callingClass) {
-		this.port = port;
-		this.callingClass = callingClass;
-	}
 
 	public Connector(int port, MessageResponse callingClass) {
 		this.port = port;
@@ -58,6 +53,7 @@ public class Connector {
 		this.attach.buffer.clear();
 		this.attach.buffer.rewind();
 		this.attach.buffer.put(data);
+		this.attach.buffer.flip();
 		this.attach.isRead = false;
 		this.attach.mainPort = this.port;
 		this.attach.client.write(this.attach.buffer, this.attach, this.readwriteHandler);

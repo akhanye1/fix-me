@@ -33,7 +33,7 @@ public class MainRouter {
 	}
 	
     public static void main(String[] args) {
-		RegisterServer(5002);
+		RegisterServer(5000);
 		RegisterServer(5001);
 		try {
 			Thread.currentThread().join();

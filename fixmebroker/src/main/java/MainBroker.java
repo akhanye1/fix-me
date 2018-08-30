@@ -13,35 +13,14 @@ public class MainBroker {
 	private MessageResponse responseHandler;
 
 	public MainBroker(FIXModel model) {
-		connector = new Connector(5000);
+		this.controller = new FIXController();
+		connector = new Connector(5000, new Reply());
 		connector.connect();
 		String FIXString = controller.GenerateFixMsgFromModel(model);
 		FIXString = CheckSum.checkSum(FIXString);
-		connector.sendMessage(FIXString);//WHY????? lol
+		connector.sendMessage(FIXString);
 	}
-
-	public void processMessage(String messageString) {
-		controller = new FIXController();
-		this.responseHandler = new Reply();
-		connector = new Connector(5002, this.responseHandler);
-		if (connector.connect()) {
-			String FIXString = controller.GenerateFixMsgFromModel(model);
-			System.out.println("FIX String :: " + FIXString);
-			FIXString = CheckSum.checkSum(FIXString);
-			connector.sendMessage(FIXString);//WHY????? lol
-			try {
-				Thread.currentThread().join();
-			}
-			catch (InterruptedException err) {
-				System.out.println("Error joining threads");
-			}
-		}
-		else {
-			System.out.println("Unable to connect to router on port :: " + 5000);
-		}
-		//connector.sendMessage("Hello");
-	}
-
+	
 	public static void main(String[] args) {
 		if (args.length != 4) {
 			System.out.println("Usage: [java -jar app.jar REQUEST_TYPE MARKET_ID INSTRUMENT QUANTITY]");

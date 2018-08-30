@@ -27,15 +27,15 @@ public class ReadWriteHandler implements CompletionHandler<Integer, Attachment> 
 			attach.buffer.get(bytes, 0, limits);
 			Charset cs = Charset.forName("UTF-8");
 			String msg = new String(bytes, cs);
-			if (attach.mainPort == 5002) {
-				System.out.println("5002 made connection");
+			if (attach.mainPort == 5000) {
+				System.out.println("5000 made connection");
 			}
 			else if (attach.mainPort == 5001) {
 				System.out.println("5001 made connection");
 			}
 			if (attach.response != null) {
 				System.out.println("Response sent to calling class");
-				attach.response.processMessage("This is a reply message");
+				attach.response.processMessage(msg);
 			}
 			else {
 				System.out.println("Calling class not set");
