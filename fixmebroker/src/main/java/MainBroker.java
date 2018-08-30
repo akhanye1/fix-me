@@ -1,16 +1,19 @@
 package fixmebroker;
 
 import fixmecore.*;
+import fixmecore.FIXController;
 
 public class MainBroker {
 
-	public static fixmecore.FIXController controller;
+	FIXController controller;
 	private Connector connector;
 
-	public MainBroker() {
+	public MainBroker(FIXModel model) {
 		connector = new Connector(5000);
 		connector.connect();
-		connector.sendMessage("Hello");
+		String FIXString = controller.GenerateFixMsgFromModel(model);
+		FIXString = CheckSum.checkSum(FIXString);
+		connector.sendMessage(FIXString);//WHY????? lol
 	}
 
 	public void processMessage(String messageString) {
@@ -20,12 +23,8 @@ public class MainBroker {
 		if (args.length != 4) {
 			System.out.println("Usage: [java -jar app.jar REQUEST_TYPE MARKET_ID INSTRUMENT QUANTITY]");
 		}else {
-			new MainBroker();
 			FIXModel model = new FIXModel("", args[3], args[4], args[2], "", "", args[1]);
-			String FIXString = controller.GenerateFixMsgFromModel(model);
-			FIXString = CheckSum.checkSum(FIXString);
-			connector.sendMessage(FIXString);//WHY????? lol
+			new MainBroker(model);
 		}
-
 	}
 }
