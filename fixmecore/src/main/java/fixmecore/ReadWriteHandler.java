@@ -35,7 +35,7 @@ public class ReadWriteHandler implements CompletionHandler<Integer, Attachment> 
 			}
 			if (attach.response != null) {
 				System.out.println("Response sent to calling class");
-				attach.response.processMessage(msg);
+				attach.response.processMessage(msg, this);
 			}
 			else {
 				System.out.println("Calling class not set");

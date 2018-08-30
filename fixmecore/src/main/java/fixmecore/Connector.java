@@ -58,4 +58,15 @@ public class Connector {
 		this.attach.mainPort = this.port;
 		this.attach.client.write(this.attach.buffer, this.attach, this.readwriteHandler);
 	}
+
+	public static void sendStaticMessage(String message, Attachment staticAttach, ReadWriteHandler readWriteHandler) {
+		byte[] data = message.getBytes();
+		staticAttach.buffer.clear();
+		staticAttach.buffer.rewind();
+		staticAttach.buffer.put(data);
+		staticAttach.buffer.flip();
+		staticAttach.isRead = false;
+		staticAttach.client.write(staticAttach.buffer, staticAttach, readWriteHandler);
+
+	}
 }

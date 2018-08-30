@@ -22,7 +22,7 @@ public class MainRouter {
 			server.bind(socketAddress);
 			Attachment attach = new Attachment();
 			attach.server = server;
-			attach.response = new Reply();
+			attach.response = new Reply(attach);
 			attach.serverAddr = socketAddress;
 			server.accept(attach, new ConnectionHandler());
 			System.out.println("Server Listening at port :: " + port);

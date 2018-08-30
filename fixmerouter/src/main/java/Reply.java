@@ -2,15 +2,19 @@ package fixmerouter;
 
 import fixmecore.MessageResponse;
 import fixmecore.Attachment;
+import fixmecore.Connector;
+import fixmecore.ReadWriteHandler;
 
 public class Reply implements MessageResponse {
 	
 	private Attachment attach;
 
-	public Reply() {
+	public Reply(Attachment attach) {
+		this.attach = attach;
 	}
 
-	public void processMessage(String message) {
-		System.out.println("Response message :: <" + message + ">");
+	public void processMessage(String message, ReadWriteHandler readWriteHandler) {
+		System.out.println("Message recieved  :: <" + message + ">");
+		Connector.sendStaticMessage(message.toLowerCase(), this.attach, readWriteHandler);
 	}
 }
