@@ -4,7 +4,7 @@ public class CheckSum {
       private static String separator = "|";
 
     public static String checkSum(String message) {
-		String eg = "SENDER_ID=|ORDER_TYPE=2|ORDER_QUANTITY=3"
+		String eg = "SENDER_ID=|ORDER_TYPE=2|ORDER_QUANTITY=3";
         String[] mssg_parts = message.split("\\|");
 		String temp;
 
