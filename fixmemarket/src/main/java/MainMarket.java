@@ -4,6 +4,7 @@ import fixmecore.Connector;
 import fixmecore.Attachment;
 import fixmecore.DisplayMarketData;
 import fixmecore.types.*;
+import fixmecore.instruments.*;
 import java.util.*;
 
 public class MainMarket {
@@ -14,9 +15,10 @@ public class MainMarket {
 	public MainMarket() {
 		connector = new Connector(5001);
 		connector.connect();
+		//instrument_List = InstrumentList.createInstrumentList();
 		connector.sendMessage("Hello");
+		instrument_List = InstrumentList.createInstrumentList();
 		DisplayMarketData.Display(instrument_List);
-	}
 
 	public static void main(String[] args) {
 		new MainMarket();
