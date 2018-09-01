@@ -15,10 +15,16 @@ public class MainMarket {
 	public MainMarket() {
 		connector = new Connector(5001);
 		connector.connect();
-		//instrument_List = InstrumentList.createInstrumentList();
 		connector.sendMessage("Hello");
 		instrument_List = InstrumentList.createInstrumentList();
 		DisplayMarketData.Display(instrument_List);
+		try {
+			Thread.currentThread().join();
+		}
+		catch (InterruptedException err) {
+			System.out.println("Unable to join threads");
+		}
+	}
 
 	public static void main(String[] args) {
 		new MainMarket();
