@@ -18,9 +18,9 @@ public class Reply implements MessageResponse {
 		if (CheckSum.validatecheckSum(message)) {
 			// send the message to the market if the message is verified
 			Connector.sendStaticMessage(message.toLowerCase(), staticAttach, readWriteHandler);
-		}else{
+		}else {
 			//return to the broker
-			Connector.sendStaticMessage("failed to send message", staticAttach, readWriteHandler);
+			Connector.sendStaticMessage("SENDER_ID=1|ORDER_TYPE=1|ORDER_QUANTITY=1|MARKET_ID=1|ORDER_PRICE=1|ORDER_STATUS=1|REQUEST_TYPE=1|CHECKSUM=aa27d768bedf4790644899b5fa034b11", staticAttach, readWriteHandler);
 		}
 	}
 }
