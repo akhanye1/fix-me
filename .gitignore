@@ -6,6 +6,7 @@
 *.DS*
 .idea/*
 .idea
+.idea/
 fixmebroker/target
 fixmebroker/target/*
 fixmemarket/target
