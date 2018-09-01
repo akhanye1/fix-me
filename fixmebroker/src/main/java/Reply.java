@@ -16,6 +16,8 @@ public class Reply implements MessageResponse {
 		    System.out.println("Order was rejected");
             System.out.println("Message Recieved < " + messageGiven +" >");
         }
-
+		else {
+			System.out.println("Message not understood by broker");
+		}
 	}
 }

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="317f379f-e2be-4587-91c0-333358a3b14e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/instruments/DisplayMarketData.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/instruments/DisplayMarketData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixmebroker/src/main/java/Reply.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmebroker/src/main/java/Reply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/CheckSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/CheckSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/FIXController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/FIXController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixmemarket/src/main/java/MainMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmemarket/src/main/java/MainMarket.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/fixmecore/target/" />
@@ -29,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Transactions.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Transactions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Transactions.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="447">
@@ -38,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMarket.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainMarket.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fixmemarket/src/main/java/MainMarket.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+              <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -97,8 +99,8 @@
         <option value="$PROJECT_DIR$/fixmerouter/src/main/java/Reply.java" />
         <option value="$PROJECT_DIR$/fixmebroker/src/main/java/Reply.java" />
         <option value="$PROJECT_DIR$/fixmerouter/src/main/java/MainRouter.java" />
-        <option value="$PROJECT_DIR$/fixmemarket/src/main/java/MainMarket.java" />
         <option value="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/instruments/DisplayMarketData.java" />
+        <option value="$PROJECT_DIR$/fixmemarket/src/main/java/MainMarket.java" />
       </list>
     </option>
   </component>
@@ -134,58 +136,6 @@
             <path>
               <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
               <item name="fix-me" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix-me" type="462c0819:PsiDirectoryNode" />
-              <item name="fixmebroker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix-me" type="462c0819:PsiDirectoryNode" />
-              <item name="fixmebroker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix-me" type="462c0819:PsiDirectoryNode" />
-              <item name="fixmebroker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix-me" type="462c0819:PsiDirectoryNode" />
-              <item name="fixmebroker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix-me" type="462c0819:PsiDirectoryNode" />
-              <item name="fixmecore" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix-me" type="462c0819:PsiDirectoryNode" />
-              <item name="fixmecore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix-me" type="462c0819:PsiDirectoryNode" />
-              <item name="fixmecore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fix-me" type="462c0819:PsiDirectoryNode" />
-              <item name="fixmecore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
@@ -315,15 +265,16 @@
       <updated>1535701592547</updated>
       <workItem from="1535701600933" duration="6168000" />
       <workItem from="1535784502598" duration="5675000" />
-      <workItem from="1535806550606" duration="645000" />
+      <workItem from="1535806550606" duration="780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12488000" />
+    <option name="totallyTimeSpent" value="12623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -335,10 +286,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32935324" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32935324" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32935324" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1373802" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1373802" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -622,17 +573,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixmemarket/src/main/java/MainMarket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Transactions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
           <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmemarket/src/main/java/MainMarket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
         </state>
       </provider>
     </entry>

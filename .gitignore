@@ -4,6 +4,8 @@
 *.iml
 *.jar
 *.DS*
+.idea/*
+.idea
 fixmebroker/target
 fixmebroker/target/*
 fixmemarket/target
