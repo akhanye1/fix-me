@@ -15,7 +15,7 @@ public class MainMarket
 
 	public MainMarket()
     {
-		connector = new Connector(5001);
+		connector = new Connector(5001, new Reply());
 		connector.connect();
 		connector.sendMessage("Hello");
 		instrument_List = InstrumentList.createInstrumentList();
