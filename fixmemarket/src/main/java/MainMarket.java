@@ -26,7 +26,6 @@ public class MainMarket
 		catch (InterruptedException err) {
 			System.out.println("Unable to join threads");
 		}
-
 	}
 
 	public static void main(String[] args)

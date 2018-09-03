@@ -15,7 +15,7 @@ public class CheckSum {
 		if (message.contains("|")) {
 			String originalMessage = message.substring(0, message.lastIndexOf("|"));
 			String checkVerify = message.substring(message.lastIndexOf("=") + 1);
-			System.out.println("Original Message : " + originalMessage);
+			//System.out.println("Original Message : " + originalMessage);
 			String sumCode = Encrypt.encrypt(originalMessage);
 			return (checkVerify.equals(sumCode));
 		}

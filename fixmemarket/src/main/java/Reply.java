@@ -10,10 +10,14 @@ public class Reply implements MessageResponse{
 			System.out.println("Checksum okay");
 			FIXModel fixModel = controller.readToObject(messageGiven);
 			System.out.println("Qty :: " + fixModel.ORDER_QUANTITY);
+			fixModel.ORDER_STATUS = "2";
+			String fixMessage = controller.GenerateFixMsgFromModel(fixModel);
+			fixMessage = CheckSum.generatecheckSum(fixMessage);
+			System.out.println("Attempting to respond to client");
+			Connector.sendStaticMessage(fixMessage, attach, readWriteHandler);
 		}
 		else {
 			System.out.println("Checksum failed");
 		}
-        //System.out.println("Response :: <" + messageGiven + ">");
     }
 }

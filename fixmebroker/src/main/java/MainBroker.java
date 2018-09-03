@@ -30,7 +30,7 @@ public class MainBroker {
 	public static void main(String[] args) {
 		if (args.length != 4) {
 			System.out.println("Usage: [java -jar app.jar REQUEST_TYPE MARKET_ID INSTRUMENT QUANTITY]");
-		}else {
+		} else {
 			FIXModel model = new FIXModel("", args[2], args[3], args[1], "", "", args[0]);
 			new MainBroker(model);
 		}

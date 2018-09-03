@@ -12,12 +12,22 @@ public class Clients {
 		attachedClients.add(attach);
 	}
 
-	public static Attachment findClient(Attachment attach) {
+	public static Attachment findMarket(String marketId) {
 		for (Attachment tempAttach : attachedClients) {
-			if (tempAttach.id.equals(attach.id)) {
+			if (tempAttach.id.equals(marketId) && !tempAttach.isBroker) {
 				return (tempAttach);
 			}
 		}
 		return (null);
 	}
+
+	public static Attachment findBroker(String brokerId) {
+		for (Attachment tempAttach : attachedClients) {
+			if (tempAttach.id.equals(brokerId) && tempAttach.isBroker) {
+				return (tempAttach);
+			}
+		}
+		return (null);
+	}
+
 }

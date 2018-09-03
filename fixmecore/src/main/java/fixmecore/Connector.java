@@ -19,6 +19,8 @@ public class Connector {
 		this.attach.isRead = false;
 		this.attach.response = this.callingClass;
 		this.attach.mainPort = this.port;
+		this.attach.isBroker = this.port == 5000;
+		this.attach.mustRead = true;
 	}
 
 	public Connector(int port) {
@@ -56,6 +58,7 @@ public class Connector {
 		this.attach.buffer.flip();
 		this.attach.isRead = false;
 		this.attach.mainPort = this.port;
+		this.attach.mustRead = true;
 		this.attach.client.write(this.attach.buffer, this.attach, this.readwriteHandler);
 	}
 
@@ -67,6 +70,5 @@ public class Connector {
 		staticAttach.buffer.flip();
 		staticAttach.isRead = false;
 		staticAttach.client.write(staticAttach.buffer, staticAttach, readWriteHandler);
-
 	}
 }

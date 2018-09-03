@@ -32,6 +32,7 @@ public class ReadWriteHandler implements CompletionHandler<Integer, Attachment> 
 			}
 			else if (attach.mainPort == 5001) {
 				System.out.println("5001 made connection");
+				//attach.mustRead = false;
 			}
 			if (attach.response != null) {
 				System.out.println("Response sent to calling class");
@@ -39,27 +40,17 @@ public class ReadWriteHandler implements CompletionHandler<Integer, Attachment> 
 			}
 			else {
 				System.out.println("Calling class not set");
-			}
-			/*System.out.format("Client at  %s  says: %s%n", attach.clientAddr,
-					msg);
-			attach.isRead = false; // It is a write
-			//Make data readable for the client, for resend
-			attach.buffer.rewind();
-			attach.buffer.clear();
-			byte[] data = msg.getBytes(cs);
-			attach.buffer.put(data);
-			attach.buffer.flip();
-			//send back the data to the respective client
-			attach.client.write(attach.buffer, attach, this);
-			attach.buffer.rewind();*/
-
+			}	
 		} else {
-			// Write to the client
-			//attach.client.write(attach.buffer, attach, this);
-			System.out.println("Message was sent");
-			attach.isRead = true;
-			attach.buffer.clear();
-			attach.client.read(attach.buffer, attach, this);
+			if (attach.mustRead) {
+				System.out.println("Must read");
+				attach.isRead = true;
+				attach.buffer.clear();
+				attach.client.read(attach.buffer, attach, this);
+			}
+			else {
+				System.out.println("Do not listen");
+			}
 		}
 	}
 

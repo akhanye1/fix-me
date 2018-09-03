@@ -45,6 +45,7 @@ class ConnectionHandler implements
             newAttach.isRead = true;
 			newAttach.mainPort = attach.mainPort;
             newAttach.clientAddr = clientAddr;
+			newAttach.isBroker = attach.isBroker;
 			Clients.addClient(newAttach);
             client.read(newAttach.buffer, newAttach, rwHandler);
         } catch (IOException e) {
