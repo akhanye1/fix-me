@@ -1,6 +1,7 @@
 package fixmecore;
 
 import java.nio.channels.AsynchronousSocketChannel;
+import java.nio.channels.ClosedChannelException;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Future;
 import java.nio.charset.Charset;

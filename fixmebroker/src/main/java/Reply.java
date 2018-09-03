@@ -19,5 +19,6 @@ public class Reply implements MessageResponse {
 		else {
 			System.out.println("Message not understood by broker");
 		}
+		System.exit(0);
 	}
 }
