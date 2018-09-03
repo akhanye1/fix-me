@@ -11,8 +11,8 @@ import fixmecore.ReadWriteHandler;
 
 class ConnectionHandler implements
         CompletionHandler<AsynchronousSocketChannel, Attachment> {
-	private static int	marketId = 0;
-	private static int	brokerId = 0;
+	private static int	marketId = 500000;
+	private static int	brokerId = 400000;
 	
     @Override
     public void completed(AsynchronousSocketChannel client, Attachment attach) {
