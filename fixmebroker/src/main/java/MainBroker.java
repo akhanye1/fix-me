@@ -16,6 +16,7 @@ public class MainBroker {
 		this.controller = new FIXController();
 		connector = new Connector(5000, new Reply());
 		connector.connect();
+		System.out.println("Usage: [java -jar app.jar REQUEST_TYPE MARKET_ID INSTRUMENT QUANTITY]");
 		String FIXString = controller.GenerateFixMsgFromModel(model);
 		FIXString = CheckSum.generatecheckSum(FIXString);
 		connector.sendMessage(FIXString);
