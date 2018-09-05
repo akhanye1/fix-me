@@ -31,7 +31,7 @@ public class MainBroker {
 		if (args.length != 5) {
 			System.out.println("Usage: [java -jar app.jar MARKET_ID REQUEST_TYPE INSTRUMENT QUANTITY ORDER_PRICE]");
 		} else {
-			FIXModel model = new FIXModel("400000", args[2], args[3], args[0], args[5], "0", args[1]);
+			FIXModel model = new FIXModel("400000", args[2], args[3], args[0], args[4], "0", args[1]);
 			new MainBroker(model);
 		}
 	}
