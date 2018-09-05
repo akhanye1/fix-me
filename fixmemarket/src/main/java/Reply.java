@@ -15,7 +15,6 @@ public class Reply implements MessageResponse{
 		{
 			System.out.println("Checksum okay");
 			FIXModel fixModel = controller.readToObject(messageGiven);
-			System.out.println("Qty :: " + fixModel.ORDER_QUANTITY);
 			fixModel.ORDER_STATUS = "2";
 			String fixMessage = controller.GenerateFixMsgFromModel(fixModel);
 //			System.out.println("--------------------------------------------" + fixMessage + "-------------------------------------------------");

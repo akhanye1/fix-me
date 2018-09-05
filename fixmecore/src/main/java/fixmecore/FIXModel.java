@@ -60,7 +60,7 @@ public class FIXModel {
         MARKET_ID = market_id;
 		//MARKET_ID = "500000";
         ORDER_PRICE = order_price;
-		//ORDER_PRICE = "1";
+		ORDER_PRICE = "500";
         ORDER_STATUS = order_status;
 		//ORDER_STATUS = "1";
         REQUEST_TYPE = request_type;

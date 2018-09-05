@@ -17,7 +17,6 @@ public class MainMarket
 		connector.connect();
 		connector.sendMessage("Hello");
 		instrument_List = InstrumentList.createInstrumentList();
-		System.out.println("What the fuck Zach");
 		DisplayMarketData.Display(instrument_List);
 		try {
 			Thread.currentThread().join();

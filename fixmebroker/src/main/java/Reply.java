@@ -8,11 +8,13 @@ public class Reply implements MessageResponse {
 
 	public void processMessage(String messageGiven, ReadWriteHandler readWriteHandler, Attachment attach) {
 		FIXModel fixModel =  controller.readToObject(messageGiven);
-		if (fixModel.ORDER_STATUS.toLowerCase().equals("1")){
+		//System.out.println("------" + fixModel.ORDER_STATUS);
+		if (fixModel.ORDER_STATUS.equals("1")){
 		    System.out.println("Order was executed");
             System.out.println("Message Recieved < " + messageGiven +" >");
 
-        }else if(fixModel.ORDER_STATUS.toLowerCase().equals("2")){
+
+        }else if(fixModel.ORDER_STATUS.equals("2")){
 		    System.out.println("Order was rejected");
             System.out.println("Message Recieved < " + messageGiven +" >");
         }

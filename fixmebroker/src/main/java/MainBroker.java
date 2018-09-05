@@ -16,7 +16,6 @@ public class MainBroker {
 		this.controller = new FIXController();
 		connector = new Connector(5000, new Reply());
 		connector.connect();
-		System.out.println("Usage: [java -jar app.jar REQUEST_TYPE MARKET_ID INSTRUMENT QUANTITY]");
 		String FIXString = controller.GenerateFixMsgFromModel(model);
 		FIXString = CheckSum.generatecheckSum(FIXString);
 		connector.sendMessage(FIXString);
@@ -29,10 +28,10 @@ public class MainBroker {
 	}
 	
 	public static void main(String[] args) {
-		if (args.length != 4) {
-			System.out.println("Usage: [java -jar app.jar REQUEST_TYPE MARKET_ID INSTRUMENT QUANTITY]");
+		if (args.length != 5) {
+			System.out.println("Usage: [java -jar app.jar MARKET_ID REQUEST_TYPE INSTRUMENT QUANTITY ORDER_PRICE]");
 		} else {
-			FIXModel model = new FIXModel("400000", args[2], args[3], args[1], "", "", args[0]);
+			FIXModel model = new FIXModel("400000", args[2], args[3], args[0], args[5], "0", args[1]);
 			new MainBroker(model);
 		}
 	}
