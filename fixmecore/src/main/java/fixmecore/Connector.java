@@ -72,4 +72,10 @@ public class Connector {
 		staticAttach.isRead = false;
 		staticAttach.client.write(staticAttach.buffer, staticAttach, readWriteHandler);
 	}
+
+	public static void listenToWrite(Attachment staticAttachment, ReadWriteHandler readWriteHandler) {
+		staticAttachment.isRead = true;
+		staticAttachment.buffer.clear();
+		staticAttachment.client.read(staticAttachment.buffer, staticAttachment, readWriteHandler);
+	}
 }

@@ -11,6 +11,11 @@ public class Reply implements MessageResponse{
 	private List<InstrumentObject> instrument_List;
 
 	public void processMessage(String messageGiven, ReadWriteHandler readWriteHandler, Attachment attach) {
+		if (messageGiven.startsWith("registerId:")) {
+			System.out.println("Market id : " + messageGiven.substring("registerId:".length()));
+			Connector.listenToWrite(attach, readWriteHandler);
+			return ;
+		}
 		if (CheckSum.validatecheckSum(messageGiven))
 		{
 			System.out.println("Checksum okay");
