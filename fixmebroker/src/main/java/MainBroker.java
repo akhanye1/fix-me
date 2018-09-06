@@ -17,7 +17,7 @@ public class MainBroker {
 		connector = new Connector(5000, new Reply());
 		connector.connect();
 		String FIXString = controller.GenerateFixMsgFromModel(model);
-		FIXString = CheckSum.generatecheckSum(FIXString);
+		//FIXString = CheckSum.generatecheckSum(FIXString);
 		connector.sendMessage(FIXString);
 		try {
 			Thread.currentThread().join();

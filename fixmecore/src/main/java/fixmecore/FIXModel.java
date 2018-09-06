@@ -20,6 +20,10 @@ public class FIXModel {
         return SENDER_ID;
     }
 
+    public void setSENDER_ID(String id) {
+        this.SENDER_ID = id;
+    }
+
     public String getINSTRUMENT() {
         return INSTRUMENT;
     }
