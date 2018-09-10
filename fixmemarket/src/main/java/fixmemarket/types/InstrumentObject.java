@@ -1,4 +1,4 @@
-package types;
+package fixmemarket.types;
 
 public class InstrumentObject
 {

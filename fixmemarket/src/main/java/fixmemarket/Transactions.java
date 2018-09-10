@@ -3,7 +3,7 @@ package fixmemarket;
 import fixmemarket.instruments.*;
 import fixmecore.FIXController;
 import fixmecore.FIXModel;
-import fixmemarket.types.*;
+import fixmemarket.types.InstrumentObject;
 import java.util.*;
 
 public class Transactions
