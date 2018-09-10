@@ -34,9 +34,6 @@ public class Transactions
 					io.setQuantity(io.getQuantity() - Integer.parseInt(model.ORDER_QUANTITY));
 					transactionSuccessful = true;
 				}
-				if(io.getQuantity() <= 0)
-					io.setQuantity(0);
-					//this.instrument_List.remove(io);
 			}
 
 		}
@@ -77,7 +74,6 @@ public class Transactions
 		}
 
 		DisplayMarketData.Display(this.instrument_List);
-		System.out.println(" --------------------" + request_Type);
 		this.model.ORDER_STATUS = request_Type;
 		return this.model;
 	}

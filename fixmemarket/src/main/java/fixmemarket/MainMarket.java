@@ -8,7 +8,7 @@ import java.util.*;
 public class MainMarket
 {
 
-	private List<InstrumentObject> instrument_List;
+	static List<InstrumentObject> instrument_List;
 	private Connector connector;
 
 	public MainMarket()

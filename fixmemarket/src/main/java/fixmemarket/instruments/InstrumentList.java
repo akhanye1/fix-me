@@ -10,7 +10,7 @@ public class InstrumentList
 
 	public static List<InstrumentObject> createInstrumentList()
 	{
-		instrument_List = new ArrayList<InstrumentObject>();
+		instrument_List = new ArrayList<>();
 		String[] instrument_names = {"BTC", "LTC", "GNOSIS","RIPPLE", "ETHEREUM"};
 		int[] order_prices = {200, 150, 170, 185, 100};
 		int[] order_quantity = {80, 15, 80, 20, 60};

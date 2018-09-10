@@ -50,24 +50,16 @@ public class FIXModel {
 
 
 
-    public FIXModel()
-    {
 
-    }
 
     public FIXModel(String sender_id, String instrument, String order_quantity, String market_id,
                     String order_price, String order_status, String request_type){
         SENDER_ID = sender_id;
         INSTRUMENT = instrument;
-        //INSTRUMENT = "BTC";
         ORDER_QUANTITY = order_quantity;
         MARKET_ID = market_id;
-		//MARKET_ID = "500000";
         ORDER_PRICE = order_price;
-		ORDER_PRICE = "500";
         ORDER_STATUS = order_status;
-		//ORDER_STATUS = "1";
         REQUEST_TYPE = request_type;
-        //REQUEST_TYPE = "BUY";
     }
 }
