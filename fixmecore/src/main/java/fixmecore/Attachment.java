@@ -18,4 +18,5 @@ public class Attachment {
 	public boolean							isBroker;
 	public boolean							isRead;	
 	public boolean							mustRead;
+	public String							tempString;
 }

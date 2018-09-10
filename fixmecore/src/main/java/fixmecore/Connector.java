@@ -52,7 +52,7 @@ public class Connector {
 	}
 
 	public void	sendMessage(String message) {
-		byte[] data = message.getBytes();
+		byte[] data = "register".getBytes();
 		this.attach.buffer.clear();
 		this.attach.buffer.rewind();
 		this.attach.buffer.put(data);
@@ -60,6 +60,7 @@ public class Connector {
 		this.attach.isRead = false;
 		this.attach.mainPort = this.port;
 		this.attach.mustRead = true;
+		this.attach.tempString = message;
 		this.attach.client.write(this.attach.buffer, this.attach, this.readwriteHandler);
 	}
 
@@ -71,5 +72,11 @@ public class Connector {
 		staticAttach.buffer.flip();
 		staticAttach.isRead = false;
 		staticAttach.client.write(staticAttach.buffer, staticAttach, readWriteHandler);
+	}
+
+	public static void listenToWrite(Attachment staticAttachment, ReadWriteHandler readWriteHandler) {
+		staticAttachment.isRead = true;
+		staticAttachment.buffer.clear();
+		staticAttachment.client.read(staticAttachment.buffer, staticAttachment, readWriteHandler);
 	}
 }

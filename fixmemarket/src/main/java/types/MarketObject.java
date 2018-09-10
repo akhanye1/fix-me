@@ -1,4 +1,4 @@
-package fixmecore.types;
+package types;
 
 import lombok.Getter;
 import lombok.Setter;

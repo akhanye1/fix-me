@@ -1,21 +1,19 @@
 package fixmemarket;
 
 import fixmecore.Connector;
-import fixmecore.Attachment;
 import fixmecore.DisplayMarketData;
-import fixmecore.types.*;
-import fixmecore.instruments.*;
+import types.*;
+import instruments.InstrumentList;
 import java.util.*;
-
 public class MainMarket
 {
 
-	private static List<InstrumentObject> instrument_List;
+	private List<InstrumentObject> instrument_List;
 	private Connector connector;
 
 	public MainMarket()
     {
-		connector = new Connector(5001, new Reply());
+		connector = new Connector(5001, new fixmemarket.Reply());
 		connector.connect();
 		connector.sendMessage("Hello");
 		instrument_List = InstrumentList.createInstrumentList();
