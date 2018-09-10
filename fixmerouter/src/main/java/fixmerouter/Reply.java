@@ -46,11 +46,12 @@ public class Reply implements MessageResponse {
 			//marketId = Integer.parseInt(model.MARKET_ID);
 			if ((marketAttachment = Clients.findBroker(model.SENDER_ID)) != null) { 
 				System.out.println("Broker found");
-				marketAttachment.mustRead = true;
+				marketAttachment.mustRead = false;
 				Connector.sendStaticMessage(message, marketAttachment, readWriteHandler);
 			}
 			else {
 				System.out.println("Broker not found");
+				marketAttachment.mustRead = false;
 				Connector.sendStaticMessage(message.toLowerCase(), staticAttach, readWriteHandler);
 			}
 		}
@@ -64,6 +65,20 @@ public class Reply implements MessageResponse {
 		System.out.println("Message recieved  :: <" + message + ">");
 
 		//validateCheckSum should return true or false depending if the message is verified, so that we can know if the request was executed or not.
+		if (message.equals("register")) {
+			if (staticAttach.isBroker) {
+				String sendString = "registerId:" + staticAttach.id;
+				staticAttach.mustRead = true;
+				staticAttach.isRead = false;
+				Connector.sendStaticMessage(sendString, staticAttach, readWriteHandler);
+			}
+			else {
+				String sendString = "registerId:" + staticAttach.id;
+				staticAttach.isRead = false;
+				Connector.sendStaticMessage(sendString, staticAttach, readWriteHandler);
+			}
+			return ;
+		}
 
 		if (CheckSum.validatecheckSum(message)) {
 			// send the message to the market if the message is verified

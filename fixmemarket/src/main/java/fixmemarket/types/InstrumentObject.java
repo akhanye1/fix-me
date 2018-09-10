@@ -1,30 +1,27 @@
-package fixmecore.types;
-
-import lombok.Getter;
-import lombok.Setter;
+package types;
 
 public class InstrumentObject
 {
-	protected Long id;
+	protected int id;
 	private int order_price;
 	private int order_quantity;
 	private String instrument_name;
-	private static Long idCounter = 0L;
+	private static int idCounter = 0;
 
-	public InstrumentObject(String instrumentName, int quantity, int price)
+	public InstrumentObject(int id, String instrumentName, int quantity, int price)
 	{
-		this.id = nextId();
+		this.id = id;
 		this.instrument_name = instrumentName;
 		this.order_price = price;
 		this.order_quantity = quantity;
 	}
 
-	private Long nextId()
+	private int nextId()
 	{
 		return(++idCounter);
 	}
 
-	 public Long getId() {
+	 public int getId() {
         return id;
     }
 
