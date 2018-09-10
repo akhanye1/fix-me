@@ -1,7 +1,6 @@
-package instruments;
+package fixmemarket.instruments;
 
-import fixmecore.FIXModel;
-import types.*;
+import fixmemarket.types.*;
 import java.util.*;
 
 public class InstrumentList

@@ -1,9 +1,9 @@
 package fixmemarket;
 
 import fixmecore.Connector;
-import fixmecore.DisplayMarketData;
-import types.*;
-import instruments.InstrumentList;
+import fixmemarket.instruments.DisplayMarketData;
+import fixmemarket.types.*;
+import fixmemarket.instruments.InstrumentList;
 import java.util.*;
 public class MainMarket
 {

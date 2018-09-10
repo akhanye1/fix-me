@@ -1,6 +1,6 @@
-package fixmecore;
+package fixmemarket.instruments;
 
-import types.*;
+import fixmemarket.types.*;
 import java.util.*;
 
 public class DisplayMarketData

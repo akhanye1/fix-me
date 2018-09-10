@@ -1,8 +1,8 @@
 package fixmemarket;
 
 import fixmecore.*;
-import instruments.InstrumentList;
-import types.InstrumentObject;
+import fixmemarket.instruments.InstrumentList;
+import fixmemarket.types.InstrumentObject;
 
 import java.util.List;
 
@@ -38,7 +38,7 @@ public class Reply implements MessageResponse{
 //			System.out.println(OrderStatus);
 //			System.out.println(RequestType);
 			instrument_List = InstrumentList.createInstrumentList();
-			fixmemarket.Transactions transactions = new fixmemarket.Transactions(fixModel, instrument_List);
+			Transactions transactions = new Transactions(fixModel, instrument_List);
 //============================================================================
 			fixModel = transactions.ProcTransactions(fixMessage);
 //============================================================================
