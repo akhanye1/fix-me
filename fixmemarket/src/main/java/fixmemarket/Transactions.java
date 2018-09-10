@@ -24,24 +24,27 @@ public class Transactions
 		boolean transactionSuccessful = false;
 		for(InstrumentObject io : this.instrument_List)
 		{
-			int totalPrice = io.getPrice() * Integer.parseInt(model.ORDER_QUANTITY);
-			if(io.getName().equalsIgnoreCase(model.INSTRUMENT) /*&& totalPrice == this.order_price*/)
-			{
-				if (Integer.parseInt(model.ORDER_QUANTITY) > io.getQuantity()){
-					transactionSuccessful = false;
-				}
-				else {
-					io.setQuantity(io.getQuantity() - Integer.parseInt(model.ORDER_QUANTITY));
-					transactionSuccessful = true;
+			try{
+				int totalPrice = io.getPrice() * Integer.parseInt(model.ORDER_QUANTITY);
+				if(io.getName().equalsIgnoreCase(model.INSTRUMENT) /*&& totalPrice == this.order_price*/)
+				{
+					if (Integer.parseInt(model.ORDER_QUANTITY) > io.getQuantity()){
+						transactionSuccessful = false;
+					}
+					else {
+						io.setQuantity(io.getQuantity() - Integer.parseInt(model.ORDER_QUANTITY));
+						transactionSuccessful = true;
+					}
 				}
 			}
-
+			catch(RuntimeException ex){
+				System.out.println("Invalid input");
+			}
 		}
 		if(!transactionSuccessful)
 			return response[1];
 		return response[0];
 	}
-
 	private String Sell()
 	{
 		boolean transactionSuccessful = false;
