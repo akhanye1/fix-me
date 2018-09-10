@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="317f379f-e2be-4587-91c0-333358a3b14e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/Connector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/FIXController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/FIXController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/FIXModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/FIXModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/MessageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/MessageResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/MainMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/MainMarket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/Reply.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/Reply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/Transactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/instruments/InstrumentList.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/instruments/InstrumentList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixmebroker/src/main/java/fixmebroker/MainBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/fixmebroker/src/main/java/fixmebroker/MainBroker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/fixmecore/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,15 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReadWriteHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/ReadWriteHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MessageResponse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixmecore/src/main/java/fixmecore/MessageResponse.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMarket.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainMarket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/MainMarket.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -118,8 +103,17 @@
       <file leaf-file-name="Transactions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/Transactions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="68" column="22" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="22" />
+            <state relative-caret-position="-2">
+              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainBroker.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fixmebroker/src/main/java/fixmebroker/MainBroker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="42" column="151" lean-forward="true" selection-start-line="42" selection-start-column="151" selection-end-line="42" selection-end-column="151" />
             </state>
           </provider>
         </entry>
@@ -177,6 +171,7 @@
         <option value="$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/instruments/InstrumentList.java" />
         <option value="$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/Reply.java" />
         <option value="$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/MainMarket.java" />
+        <option value="$PROJECT_DIR$/fixmebroker/src/main/java/fixmebroker/MainBroker.java" />
       </list>
     </option>
   </component>
@@ -241,6 +236,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
+              <item name="final_fixme" type="462c0819:PsiDirectoryNode" />
+              <item name="fixmebroker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fixmebroker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fix-me" type="b2602c69:ProjectViewProjectNode" />
@@ -453,7 +457,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49259000" />
+    <option name="totallyTimeSpent" value="50888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -565,7 +569,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fixmebroker/src/main/java/MainBroker.java" />
     <entry file="file://$PROJECT_DIR$/fixmemarket/src/main/java/Transactions.java" />
     <entry file="file://$PROJECT_DIR$/fixmebroker/src/main/java/Reply.java" />
     <entry file="file://$PROJECT_DIR$/fixmemarket/src/main/java/Reply.java" />
@@ -739,13 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/Transactions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="68" column="22" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/Reply.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -757,6 +753,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmemarket/src/main/java/fixmemarket/Transactions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixmebroker/src/main/java/fixmebroker/MainBroker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="42" column="151" lean-forward="true" selection-start-line="42" selection-start-column="151" selection-end-line="42" selection-end-column="151" />
         </state>
       </provider>
     </entry>

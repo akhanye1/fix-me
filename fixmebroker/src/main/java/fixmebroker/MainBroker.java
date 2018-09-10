@@ -26,13 +26,26 @@ public class MainBroker {
 			System.out.println("Error :: " + err.getMessage());
 		}
 	}
-	
+
+	public static boolean isNumeric(String strNum) {
+		try {
+			double d = Double.parseDouble(strNum);
+		} catch (NumberFormatException | NullPointerException nfe) {
+			return false;
+		}
+		return true;
+	}
+
 	public static void main(String[] args) {
 		if (args.length != 5) {
 			System.out.println("Usage: [java -jar app.jar MARKET_ID REQUEST_TYPE INSTRUMENT QUANTITY ORDER_PRICE]");
 		} else {
-			FIXModel model = new FIXModel("400000", args[2], args[3], args[0], args[4], "0", args[1]);
-			new MainBroker(model);
+			if (isNumeric(args[0]) && isNumeric(args[3]) && isNumeric(args[4]) && ( args[1].equalsIgnoreCase("buy") || args[1].equalsIgnoreCase("sell"))) {
+				FIXModel model = new FIXModel("400000", args[2], args[3], args[0], args[4], "0", args[1]);
+				new MainBroker(model);
+			}else{
+				System.out.println("Usage: [java -jar app.jar MARKET_ID REQUEST_TYPE INSTRUMENT QUANTITY ORDER_PRICE]");
+			}
 		}
 	}
 }
