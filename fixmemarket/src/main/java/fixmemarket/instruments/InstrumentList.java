@@ -18,7 +18,7 @@ public class InstrumentList
 
 			for(int i = 0; i <  5; i++)
 			{
-				instrument = new InstrumentObject(i, instrument_names[i], order_prices[i], order_quantity[i]);
+				instrument = new InstrumentObject(i, instrument_names[i], order_quantity[i], order_prices[i]);
 				instrument_List.add(instrument);
 			}
 		}

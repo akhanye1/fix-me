@@ -7,7 +7,7 @@ public class Reply implements MessageResponse {
     FIXController controller = new FIXController();
 
 	public void processMessage(String messageGiven, ReadWriteHandler readWriteHandler, Attachment attach) {
-		System.out.println("Recieved this message :: " + messageGiven);
+		System.out.println("\nReceived this message :: " + messageGiven);
 		if (messageGiven.startsWith("registerId:")) {
 			String idGiven = messageGiven.substring("registerId:".length());
 			String fixString;
@@ -20,15 +20,11 @@ public class Reply implements MessageResponse {
 			return ;
 		}
 		FIXModel fixModel =  controller.readToObject(messageGiven);
-		//System.out.println("------" + fixModel.ORDER_STATUS);
 		if (fixModel.ORDER_STATUS.equals("1")){
-		    System.out.println("Order was executed");
-            System.out.println("Message Recieved < " + messageGiven +" >");
-
+		    System.out.println("Order was executed\n");
 
         }else if(fixModel.ORDER_STATUS.equals("2")){
-		    System.out.println("Order was rejected");
-            System.out.println("Message Recieved < " + messageGiven +" >");
+		    System.out.println("Order was rejected\n");
         }
 		else {
 			System.out.println("Message not understood by broker");

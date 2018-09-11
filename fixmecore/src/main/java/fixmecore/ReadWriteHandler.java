@@ -19,7 +19,7 @@ public class ReadWriteHandler implements CompletionHandler<Integer, Attachment> 
 			}
 			return;
 		}
-		System.out.println("Is read write :: " + attach.isRead + " | port :: " + attach.mainPort);
+		//System.out.println("Is read write :: " + attach.isRead + " | port :: " + attach.mainPort);
 		if (attach.isRead) {
 			attach.buffer.flip();
 			int limits = attach.buffer.limit();
@@ -43,7 +43,7 @@ public class ReadWriteHandler implements CompletionHandler<Integer, Attachment> 
 			}	
 		} else {
 			if (attach.mustRead) {
-				System.out.println("Must read");
+				//System.out.println("Must read");
 				attach.isRead = true;
 				attach.buffer.clear();
 				attach.client.read(attach.buffer, attach, this);
