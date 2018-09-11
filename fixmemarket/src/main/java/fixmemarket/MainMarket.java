@@ -14,7 +14,10 @@ public class MainMarket
 	public MainMarket()
     {
 		connector = new Connector(5001, new fixmemarket.Reply());
-		connector.connect();
+		if (!connector.connect()) {
+			System.out.println("Error connecting to router");
+			return ;
+		}
 		connector.sendMessage("Hello");
 		instrument_List = InstrumentList.createInstrumentList();
 		DisplayMarketData.Display(instrument_List);
