@@ -25,8 +25,8 @@ public class Transactions
 		for(InstrumentObject io : this.instrument_List)
 		{
 			try{
-				//int totalPrice = io.getPrice() * Integer.parseInt(model.ORDER_QUANTITY);
-				if(io.getName().equalsIgnoreCase(model.INSTRUMENT) /*&& totalPrice == this.order_price*/)
+				int totalPrice = io.getPrice() * Integer.parseInt(model.ORDER_QUANTITY);
+				if(io.getName().equalsIgnoreCase(model.INSTRUMENT) && totalPrice <= Integer.parseInt(model.ORDER_PRICE))
 				{
 					if (Integer.parseInt(model.ORDER_QUANTITY) > io.getQuantity()){
 						transactionSuccessful = false;

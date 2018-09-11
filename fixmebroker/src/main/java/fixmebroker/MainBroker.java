@@ -33,6 +33,9 @@ public class MainBroker {
 	public static boolean isNumeric(String strNum) {
 		try {
 			double d = Double.parseDouble(strNum);
+			if (d <= 0){
+				throw new NumberFormatException("Arguments should be a positive integer.");
+			}
 		} catch (NumberFormatException | NullPointerException nfe) {
 			return false;
 		}
