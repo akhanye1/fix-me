@@ -27,6 +27,7 @@ public class Reply implements MessageResponse {
 			if ((marketAttachment = Clients.findMarket(model.MARKET_ID)) != null) {
 				System.out.println("market found");
 				marketAttachment.mustRead = true;
+				marketAttachment.tempString = message;
 				Connector.sendStaticMessage(message, marketAttachment, readWriteHandler);
 			}
 			else {
@@ -64,7 +65,6 @@ public class Reply implements MessageResponse {
 		}
 	}
 
-
 	public void processMessage(String message, ReadWriteHandler readWriteHandler, Attachment staticAttach) {
 		if (message.equals("register")) {
 			if (staticAttach.isBroker) {
@@ -82,7 +82,7 @@ public class Reply implements MessageResponse {
 		}
 		if (message.equals("offline")) {
 			System.out.println("Send to broker offline status");
-			sendToBroker(message, readWriteHandler, staticAttach);
+			sendToBroker(staticAttach.tempString, readWriteHandler, staticAttach);
 			return ;
 		}
 		if (CheckSum.validatecheckSum(message)) {

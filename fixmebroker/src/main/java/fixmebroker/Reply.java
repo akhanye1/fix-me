@@ -29,7 +29,10 @@ public class Reply implements MessageResponse {
         }else if(fixModel.ORDER_STATUS.equals("2")){
 		    System.out.println("Order was rejected");
             System.out.println("Message Recieved < " + messageGiven +" >");
-        }
+		}
+		else if (fixModel.ORDER_STATUS.equals("0")) {
+			System.out.println("Market offline");
+		}
 		else {
 			System.out.println("Message not understood by broker");
 		}

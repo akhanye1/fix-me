@@ -22,7 +22,6 @@ public class Reply implements MessageResponse{
 			FIXModel fixModel = controller.readToObject(messageGiven);
 			fixModel.ORDER_STATUS = "2";
 			String fixMessage = controller.GenerateFixMsgFromModel(fixModel);
-			//instrument_List = InstrumentList.createInstrumentList();
 			Transactions transactions = new Transactions(fixModel, MainMarket.instrument_List);
 			fixModel = transactions.ProcTransactions(fixMessage);
 			fixMessage = controller.GenerateFixMsgFromModel(fixModel);

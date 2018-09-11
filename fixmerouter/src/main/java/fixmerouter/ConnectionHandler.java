@@ -55,7 +55,7 @@ class ConnectionHandler implements
 
     @Override
     public void failed(Throwable e, Attachment attach) {
-        System.out.println("Failed to accept a  connection.");
+        System.out.println("Failed to accept a connection.");
         e.printStackTrace();
     }
 }

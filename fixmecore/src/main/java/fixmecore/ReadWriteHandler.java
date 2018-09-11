@@ -51,6 +51,9 @@ public class ReadWriteHandler implements CompletionHandler<Integer, Attachment> 
 		if (!attach.isBroker) {
 			System.out.println("Market offline");
 			attach.mustRead = false;
+			if (attach.response != null) {
+				attach.response.processMessage("offline", this, attach);
+			}
 			//Connector.sendStaticMessage("offline", attach, this);
 		}
 		else {
