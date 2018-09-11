@@ -1,10 +1,8 @@
 package fixmecore;
 
-import javax.print.attribute.standard.RequestingUserName;
-
 public class FIXController {
 
-	public static String GenerateFixMsgFromModel(fixmecore.FIXModel model) {
+	public  String GenerateFixMsgFromModel(fixmecore.FIXModel model) {
 
 		String _message = "SENDER_ID=" + model.SENDER_ID
 			+ "|ORDER_TYPE=" + model.INSTRUMENT

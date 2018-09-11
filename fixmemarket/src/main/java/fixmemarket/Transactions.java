@@ -24,27 +24,27 @@ public class Transactions
 		boolean transactionSuccessful = false;
 		for(InstrumentObject io : this.instrument_List)
 		{
-			int totalPrice = io.getPrice() * Integer.parseInt(model.ORDER_QUANTITY);
-			if(io.getName().equalsIgnoreCase(model.INSTRUMENT) /*&& totalPrice == this.order_price*/)
-			{
-				if (Integer.parseInt(model.ORDER_QUANTITY) > io.getQuantity()){
-					transactionSuccessful = false;
+			try{
+				int totalPrice = io.getPrice() * Integer.parseInt(model.ORDER_QUANTITY);
+				if(io.getName().equalsIgnoreCase(model.INSTRUMENT) /*&& totalPrice == this.order_price*/)
+				{
+					if (Integer.parseInt(model.ORDER_QUANTITY) > io.getQuantity()){
+						transactionSuccessful = false;
+					}
+					else {
+						io.setQuantity(io.getQuantity() - Integer.parseInt(model.ORDER_QUANTITY));
+						transactionSuccessful = true;
+					}
 				}
-				else {
-					io.setQuantity(io.getQuantity() - Integer.parseInt(model.ORDER_QUANTITY));
-					transactionSuccessful = true;
-				}
-				if(io.getQuantity() <= 0)
-					io.setQuantity(0);
-					//this.instrument_List.remove(io);
 			}
-
+			catch(RuntimeException ex){
+				System.out.println("Invalid input");
+			}
 		}
 		if(!transactionSuccessful)
 			return response[1];
 		return response[0];
 	}
-
 	private String Sell()
 	{
 		boolean transactionSuccessful = false;
@@ -77,7 +77,6 @@ public class Transactions
 		}
 
 		DisplayMarketData.Display(this.instrument_List);
-		System.out.println(" --------------------" + request_Type);
 		this.model.ORDER_STATUS = request_Type;
 		return this.model;
 	}
