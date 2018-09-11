@@ -15,7 +15,10 @@ public class MainBroker {
 	public MainBroker(FIXModel model) {
 		this.controller = new FIXController();
 		connector = new Connector(5000, new Reply());
-		connector.connect();
+		if (!connector.connect()) {
+			System.out.println("Error connecting to router");
+			return ;
+		}
 		String FIXString = controller.GenerateFixMsgFromModel(model);
 		//FIXString = CheckSum.generatecheckSum(FIXString);
 		connector.sendMessage(FIXString);

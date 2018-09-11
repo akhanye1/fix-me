@@ -2,6 +2,7 @@ package fixmecore;
 
 import java.nio.channels.AsynchronousSocketChannel;
 import java.nio.channels.ClosedChannelException;
+import java.nio.channels.ReadPendingException;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Future;
 import java.nio.ByteBuffer;
