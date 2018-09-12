@@ -26,7 +26,13 @@ public class Reply implements MessageResponse{
 			fixModel = transactions.ProcTransactions(fixMessage);
 			fixMessage = controller.GenerateFixMsgFromModel(fixModel);
 			fixMessage = CheckSum.generatecheckSum(fixMessage);
-			System.out.println("Attempting to respond to client");
+			if (fixModel.getORDER_STATUS().equals("1")) {
+				System.out.println("Order excecuted");
+			}
+			else {
+				System.out.println("Order rejected");
+			}
+			System.out.println("Market Message :: " + fixMessage);
 			Connector.sendStaticMessage(fixMessage, attach, readWriteHandler);
 		}
 		else {

@@ -68,12 +68,14 @@ public class Reply implements MessageResponse {
 	public void processMessage(String message, ReadWriteHandler readWriteHandler, Attachment staticAttach) {
 		if (message.equals("register")) {
 			if (staticAttach.isBroker) {
+				System.out.println("Broker Message :: " + message);
 				String sendString = "registerId:" + staticAttach.id;
 				staticAttach.mustRead = true;
 				staticAttach.isRead = false;
 				Connector.sendStaticMessage(sendString, staticAttach, readWriteHandler);
 			}
 			else {
+				System.out.println("Market Message :: " + message);
 				String sendString = "registerId:" + staticAttach.id;
 				staticAttach.isRead = false;
 				Connector.sendStaticMessage(sendString, staticAttach, readWriteHandler);
@@ -87,9 +89,11 @@ public class Reply implements MessageResponse {
 		}
 		if (CheckSum.validatecheckSum(message)) {
 			if (staticAttach.isBroker) {
+				System.out.println("Broker Message :: " + message);
 				sendToMarket(message, readWriteHandler, staticAttach);
 			}
 			else {
+				System.out.println("Market Message :: " + message);
 				sendToBroker(message, readWriteHandler, staticAttach);
 			}
 		} else {
